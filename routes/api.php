@@ -16,10 +16,6 @@ use App\Http\Controllers\Api\LoginController;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
 
 Route::controller(LoginController::class)->group(function(){
     Route::post('register', 'register');

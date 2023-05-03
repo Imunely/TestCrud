@@ -34,6 +34,7 @@ class BookController extends GaneralController
             'name' => 'required',
             'author_id' => 'required'
         ]);
+        
         if ($validator->fails()) {
             return $this->sendError('Validation Error.', $validator->errors());
         }
